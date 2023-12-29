@@ -15,6 +15,7 @@ const useMermaidEffect = () => {
       mermaid.render(
         "mermaid" + i,
         elements[i].textContent || "",
+          // @ts-ignore
         (svgCode: string) => {
           elements[i].innerHTML = svgCode
         }
